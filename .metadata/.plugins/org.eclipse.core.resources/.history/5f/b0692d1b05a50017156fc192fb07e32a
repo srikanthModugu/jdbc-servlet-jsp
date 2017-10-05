@@ -1,0 +1,26 @@
+package com.Bridgelabz.test;
+import  java.sql.*;
+public class AddingDataDB {
+	 
+	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	static final String DBASE_URL = "jdbc:mysql://localhost/UserRegistration";
+	static final String USER = "root";
+	static final String PASS = "bridgeit";
+
+	public void addDetails(String name,String lname,int age){
+		 Connection conn = null;
+		 Statement stmt = null;
+		 try {
+			 Class.forName("com.jsql.jdbc.Driver");
+			 conn = DriverManager.getConnection(DBASE_URL, USER,PASS);
+			 stmt = conn.createStatement();
+			 String sql = "INSERT INTO REGISTRATION (first, last, age) values("+name+","+lname")";
+		 }
+		 catch (Exception e) {
+			// TODO: handle exception
+		}
+		 finally {
+			// TODO: handle finally clause
+		}
+	}
+}

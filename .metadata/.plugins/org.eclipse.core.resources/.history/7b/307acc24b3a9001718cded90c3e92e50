@@ -1,0 +1,1 @@
+<jsp:useBean id="reg"class="com.bridgeit.RegisterBean"></jsp:useBean>

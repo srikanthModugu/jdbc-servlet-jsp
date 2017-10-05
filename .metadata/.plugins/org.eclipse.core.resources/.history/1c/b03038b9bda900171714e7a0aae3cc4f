@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Page</title>
+<style type="text/css">
+.button {
+	border: none;
+	border-radius: 8px;
+	color: white;
+	padding: 13px 30px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #4CAF50;
+	display: inline-block;
+	font-size: 16px;
+}
+.tb10 {
+	background-image:url(images/form_bg.jpg);
+	background-repeat:repeat-x;
+	border:1.5px solid black;
+	width: 230px;
+	color:navy;
+	padding:3px;
+	margin-right:4px;
+	margin-bottom:8px;
+	font-family:tahoma, arial, sans-serif;
+}
+.bg {
+    /* The image used */
+    background-image: url("back.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input[type=submit]
+{d #d1c7ac
+	border: none;
+	border-radius: 8px;
+	color: white;
+	padding: 13px 30px;
+	text-align: center;
+	text-decoration: none;
+	
+	display: inline-block;
+	font-size: 16px;
+}
+
+button:hover {
+	background-color: #4CAF50;
+	color: white;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0
+		rgba(0, 0, 0, 0.19);
+}
+
+td {
+	font-size: 18px;
+}
+</style>
+
+</head>
+<body class="bg">
+	
+
+		<div style="height: 700px; width: 1300px; color: white; float: left;">
+
+			<div style="height: 700px; width: 200px;  float: left;">
+
+			</div>
+
+			<div
+				style="height: 700px; width: 700px;  color: black; float: left;">
+				<form action="RegBean.jsp" method="get" >
+					<table style="height: 600; width: 700; margin: 30px;  color: white;">
+					
+						<tr>
+							<th colspan="2"><h1>Student Registration Form</h1></th>
+						</tr>
+						
+						<tr>
+							<td>Student ID :</td>
+							<td><input class="tb10" type='text' name='studentid' size='30' placeholder="StudentID" ><br></td>
+						</tr>
+
+						<tr>
+							<td>Student Name :</td>
+							<td><input class="tb10" type='text' name='studentName' size='30'placeholder="StudentName"><br></td>
+						</tr>
+
+						<tr>
+							<td>password :</td>
+							<td><input class="tb10" type='password' name='password' size='30' placeholder="Password" ><br></td>
+						</tr>
+
+						<tr>
+							<td>Date of birth :</td>
+							<td><input class="tb10" type='date'  name="DOB">
+							<br></td>
+						</tr>
+
+						<tr>
+							<td>Gender :</td>
+							<td><input type='radio' name='gender' value='male'>male
+								<input type='radio' name='gender' value='female'>Female<br></td>
+						</tr>
+
+						<tr>
+							<td>Department :</td>
+							<td><select name='department'>
+									<option>Department</option>
+									<option>Computer</option>
+									<option>Civil</option>
+									<option>E & TC</option>
+									<option>Mechanical</option>
+									<option>IT</option>
+							</select></td>
+						</tr>
+
+						<tr>
+							<td>Email Id :</td>
+							<td><input  class="tb10" type='email' name='emailId' size='30' "><br></td>
+						</tr>
+
+						<tr>
+							<td>Address :</td>
+							<td><input  class="tb10" type='text' name='address' placeholder="Address" size='30'><br></td>
+						</tr>
+
+						<tr>
+							<td>City :</td>
+							<td><input class="tb10" type='text' name='city' size='30'placeholder="City"><br></td>
+						</tr>
+
+						<tr>
+							<td>District :</td>
+							<td><input class="tb10" type='text' name='district' size='30' placeholder="District"><br></td>
+						</tr>
+
+						<tr>
+							<td>State :</td>
+							<td><input class="tb10" type='text' name='state' size='30'placeholder="State"><br></td>
+						</tr>
+
+						<tr>
+							<td>Pin code :</td>
+							<td><input class="tb10" type='text' name='pincode' size='30' maxlength="6"><br></td>
+						</tr>
+
+						<tr>
+							<td>Contact No :</td>
+							<td><input class="tb10" type='text' name='mobileNo' size='30' placeholder="Phone No"><br></td>
+						</tr>
+
+
+						<tr>
+							<td><button class="button" type="submit" formaction="RegisterForm.html">Reset</button></td>
+							<td><input class="button" type="submit" value="Register" ></td>
+						</tr>
+					</table>
+
+					<div
+						style="height: 25px; width: 400px;  color: black; float: left; margin-left: 100px">
+						<h4>
+							Already have an account?
+							<button type="submit" formaction="LoginPage.html">Login</button>
+						</h4>
+					</div>
+				</form>
+
+
+			</div>
+			
+	</div>
+
+</html>

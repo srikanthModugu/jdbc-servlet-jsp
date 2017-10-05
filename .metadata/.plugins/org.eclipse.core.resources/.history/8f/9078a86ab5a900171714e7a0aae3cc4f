@@ -1,0 +1,3 @@
+<jsp:useBean id="reg"class="com.bridgeit.RegisterBean" scope="request">
+<jsp:setProperty property="reg" name="*"/>
+</jsp:useBean>

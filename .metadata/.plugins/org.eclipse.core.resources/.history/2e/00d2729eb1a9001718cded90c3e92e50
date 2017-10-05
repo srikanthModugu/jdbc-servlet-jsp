@@ -1,0 +1,17 @@
+package com.bridgeit;
+
+public class RegisterBean {
+	String id ;
+	String name;
+	String password;
+	String gender;
+	String department;
+	String emailId;
+	String address;
+	String city;
+	String district;
+	String state ;
+    String pincode;
+    String mobileNo;
+    String sql;
+}
